@@ -1,3 +1,5 @@
+![banner cnns ppgcc ufsc](http://www.lapix.ufsc.br/wp-content/uploads/2019/06/VC-lapix.png)
+
 # Weed-Mapping
 Weed Mapping in Aerial Images through Identification and Segmentation of Crop Rows and Weeds using Convolutional Neural Networks
 
