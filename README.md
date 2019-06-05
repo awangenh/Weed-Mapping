@@ -18,12 +18,6 @@ This repository serves as a Semantic Segmentation Suite. The goal is to easily b
 
 **Any suggestions to improve this repository, including any new segmentation models you would like to see are welcome!**
 
-You can also check out my [Transfer Learning Suite](https://github.com/GeorgeSeif/Transfer-Learning-Suite).
-
-## Citing
-
-If you find this repository useful, please consider citing it using a link to the repo :)
-
 ## Frontends
 
 The following feature extraction models are currently made available:
@@ -202,3 +196,19 @@ optional arguments:
 
 ```
   
+## Citing this Git
+
+
+```tex
+@misc{WeedMappingCode2019,
+  author = {Monteiro, A.A.O. and von Wangenheim, A.},
+  title = {Weed Mapping in Aerial Images through Identification and Segmentation of Crop Rows and Weeds},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/awangenh/Weed-Mapping}}
+}
+```
+
+![banner Creative Commons INCoD UFSC](http://www.lapix.ufsc.br/wp-content/uploads/2019/05/cc.png)
+
