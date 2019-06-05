@@ -11,6 +11,8 @@ This repository serves as a Weed Mapping Semantic Segmentation Suite. The goal i
 
 It is based upon the, meanwhile deprecated, code repo at:  https://github.com/GeorgeSeif/Semantic-Segmentation-Suite. We, however, did not duplicate the whole repo and data here. Only the code that was necessary for our Weed Mapping apllication is here. Where modifications and extensions were needed, we did them. 
 
+- The institutional code mirror repository for this work is at: https://codigos.ufsc.br/lapix/Weed-Mapping
+
 We also added a Jupyter Notebook with the whole high-level code necessary for training and predicting crop rows and weed areas. The datasets we employed in our experiments are here:
 
  - http://www.lapix.ufsc.br/weed-mapping-sugar-cane (Large Sugar Cane Field – Northern Brazil - contains weeds)
