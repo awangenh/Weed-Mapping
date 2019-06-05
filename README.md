@@ -7,14 +7,24 @@ Weed Mapping in Aerial Images through Identification and Segmentation of Crop Ro
 ![alt-text-10](http://www.lapix.ufsc.br/wp-content/uploads/2019/06/weed-mapping.jpg)
 
 ## Description
-This repository serves as a Semantic Segmentation Suite. The goal is to easily be able to implement, train, and test new Semantic Segmentation models! Complete with the following:
+This repository serves as a Weed Mapping Semantic Segmentation Suite. The goal is to easily be able to implement, train, and test new Semantic Segmentation models! 
 
-- Training and testing modes
-- Data augmentation
-- Several state-of-the-art models. Easily **plug and play** with different models
-- Able to use **any** dataset
-- Evaluation including precision, recall, f1 score, average accuracy, per-class accuracy, and mean IoU
-- Plotting of loss function and accuracy over epochs
+It is based upon the, meanwhile deprecated, code repo at:  https://github.com/GeorgeSeif/Semantic-Segmentation-Suite. We, however, did not duplicate the whole repo and data here. Only the code that was necessary for our Weed Mapping apllication is here. Where modifications and extensions were needed, we did them. 
+
+We also added a Jupyter Notebook with the whole high-level code necessary for training and predicting crop rows and weed areas. The datasets we employed in our experiments are here:
+
+ - http://www.lapix.ufsc.br/weed-mapping-sugar-cane (Large Sugar Cane Field – Northern Brazil - contains weeds)
+ - http://www.lapix.ufsc.br/crop-rows-sugar-cane (Large Sugar Cane Field – Northern Brazil - contains only well-behaved crops)
+
+This code repo is complete with the following:
+
+ - Jupyter Notebook with the whole high-level code necessary for training and predicting crop rows and weed areas
+ - Training and testing modes
+ - Data augmentation
+ - Several state-of-the-art models. Easily **plug and play** with different models
+ - Able to use **any other** dataset besides our own
+ - Evaluation including precision, recall, f1 score, average accuracy, per-class accuracy, and mean IoU
+ - Plotting of loss function and accuracy over epochs
 
 **Any suggestions to improve this repository, including any new segmentation models you would like to see are welcome!**
 
@@ -64,6 +74,7 @@ to obtain robust features for recognition. The two streams are coupled at the fu
 
 ## Files and Directories
 
+- **weedMaping.ipynb**: Jupyter Notebook with the whole high-level code necessary for training and predicting crop rows and weed areas
 
 - **train.py:** Training on the dataset of your choice. Default is CamVid
 
@@ -104,42 +115,13 @@ The only thing you have to do to get started is set up the folders in the follow
     |   ├── test
     |   ├── test_labels
 
-Put a text file under the dataset directory called "class_dict.csv" which contains the list of classes along with the R, G, B colour labels to visualize the segmentation results. This kind of dictionairy is usually supplied with the dataset. Here is an example for the CamVid dataset:
+Put a text file under the dataset directory called "class_dict.csv" which contains the list of classes along with the R, G, B colour labels to visualize the segmentation results. This kind of dictionairy is usually supplied with the dataset. Here is an example for the **Weed Mapping dataset**:
 
 ```
 name,r,g,b
-Animal,64,128,64
-Archway,192,0,128
-Bicyclist,0,128, 192
-Bridge,0, 128, 64
-Building,128, 0, 0
-Car,64, 0, 128
-CartLuggagePram,64, 0, 192
-Child,192, 128, 64
-Column_Pole,192, 192, 128
-Fence,64, 64, 128
-LaneMkgsDriv,128, 0, 192
-LaneMkgsNonDriv,192, 0, 64
-Misc_Text,128, 128, 64
-MotorcycleScooter,192, 0, 192
-OtherMoving,128, 64, 64
-ParkingBlock,64, 192, 128
-Pedestrian,64, 64, 0
-Road,128, 64, 128
-RoadShoulder,128, 128, 192
-Sidewalk,0, 0, 192
-SignSymbol,192, 128, 128
-Sky,128, 128, 128
-SUVPickupTruck,64, 128,192
-TrafficCone,0, 0, 64
-TrafficLight,0, 64, 64
-Train,192, 64, 128
-Tree,128, 128, 0
-Truck_Bus,192, 128, 192
-Tunnel,64, 0, 64
-VegetationMisc,192, 192, 0
-Void,0, 0, 0
-Wall,64, 192, 0
+SugarCane,0,255,0
+Soil,255,0,0
+Invasive,255,255,0
 ```
 
 **Note:** If you are using any of the networks that rely on a pre-trained ResNet, then you will need to download the pre-trained weights using the provided script. These are currently: PSPNet, RefineNet, DeepLabV3, DeepLabV3+, GCN.
