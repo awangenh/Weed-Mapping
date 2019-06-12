@@ -180,6 +180,16 @@ optional arguments:
 
 ```
   
+
+
+## Acknowledgements
+This work was the result of a collaborative effort of a team of engaged researchers:
+- Alexandre Monteiro <xandemont@gmail.com>
+- Paulo Cesar Pereira Junior <pcpereiraj@gmail.com>
+- Antonio Carlos Sobieranski <asobieranski@gmail.com>
+- Rafael da Luz Ribeiro <rl.ribeiro@outlook.com>
+
+
 ## Citing this Git
 
 
