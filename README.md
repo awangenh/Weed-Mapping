@@ -4,7 +4,7 @@
 Weed Mapping in Aerial Images through Identification and Segmentation of Crop Rows and Weeds using Convolutional Neural Networks
 
 
-![alt-text-10](http://www.lapix.ufsc.br/wp-content/uploads/2019/06/weed-mapping.jpg)
+![alt-text-10](http://www.lapix.ufsc.br/wp-content/uploads/2019/06/results2.png)
 
 ## Description
 This repository serves as a Weed Mapping Semantic Segmentation Suite. The goal is to easily be able to implement, train, and test new Semantic Segmentation models! 
